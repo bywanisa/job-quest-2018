@@ -1,0 +1,83 @@
+.section {
+  text-align: center;
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(5px + 2vmin);
+  color: white;
+}
+
+h2 {
+  cursor: pointer;
+}
+
+.chuck-img {
+  animation: chuck-spin 2s alternate linear infinite;
+  height: 40vmin;
+}
+
+form {
+  display: none;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 10px;
+  font-size: 12px;
+  position: absolute;
+  margin: auto;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+input {
+  border: none;
+  border-radius: 10px;
+  min-height: 24px;
+  text-align: center;
+}
+
+button {
+  text-align: center;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.5em;
+  background-color: #ddd;
+  padding: 3px;
+}
+
+button:hover {
+  text-decoration: underline;
+}
+
+.res {
+  margin: 50px 30px;
+  padding-top: 20px;
+  color: bisque;
+  min-width: 300px;
+}
+
+@media all and (max-width: 768px) {
+  form {
+    grid-template-columns: 1fr;
+    grid-gap: 0;
+    background-color: #555;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  button {
+    margin-top: 10px;
+  }
+}
+
+@keyframes chuck-spin {
+  0% {
+    transform: rotate(-90deg) scale(1.5);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: rotate(90deg) scale(1.5);
+  }
+}

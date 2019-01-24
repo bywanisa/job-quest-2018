@@ -1,0 +1,18 @@
+{
+  "name": "takemetour-job-quest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "job-quest-2018"
+  },
+  "author": "Wanisa Buayam",
+  "license": "ISC",
+  "dependencies": {
+    "create-react-app": "^2.1.3"
+  }
+}
