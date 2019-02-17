@@ -62,9 +62,9 @@ class App extends Component {
         </div>
         <div className="res">
           <hr />
-          {this.state.jokes.map((each) => (
+          {this.state.jokes.map((each) => {
             <h4 key={each.id}>{'"' + each.joke + '"'}</h4>
-          ))
+          })
           }
         </div>
       </div>
